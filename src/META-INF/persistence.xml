@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Mines_Sweppers_PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>conn.Moves</class>
+    <class>conn.UsersDemo</class>
+    <class>conn.Boards</class>
+    <class>conn.Sysdiagrams</class>
+    <class>conn.Users</class>
+    <class>conn.Users1</class>
+    <class>conn.TableDemo</class>
+    <class>conn.LocalsMines</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=My_DB"/>
+      <property name="javax.persistence.jdbc.user" value="sql"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="0526707041"/>
+    </properties>
+  </persistence-unit>
+</persistence>
